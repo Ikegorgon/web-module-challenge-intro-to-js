@@ -261,7 +261,7 @@ let startingNumber = 10;
 function annoyingSong(start){
   console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around "+ (start-1) + " bottles of soda on the wall");
 }
-for (i = startingNumber; i > 0; i--) {
+for (let i = startingNumber; i > 0; i--) {
   annoyingSong(i);
 }
 

@@ -29,19 +29,19 @@ Exercises are outlined in the `index.js` file, please read the instructions care
 Using VSCode, Codegrade and Command Line:
 
 
-1. Fork the repo
-2. Go into canvas and connect your reop to codegrade
-3. Clone your forked version of the repo
-4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
-5. cd into your repo
-6. open the terminal in your vs code and type `npm install`
-7. open a split screen terminal with the window button on your terminal
-8. next type `npm run test` in one side of your terminal and `npm run start` in the other side
-9. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+1. Fork the repo [x]
+2. Go into canvas and connect your reop to codegrade [x]
+3. Clone your forked version of the repo [x]
+4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today [x]
+5. cd into your repo [x]
+6. open the terminal in your vs code and type `npm install` [x]
+7. open a split screen terminal with the window button on your terminal [x]
+8. next type `npm run test` in one side of your terminal and `npm run start` in the other side [x]
+9. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push. [x]
 
 ### Task 2: MVP
 
-Find the `index.js` file and complete the tasks as written. 
+Find the `index.js` file and complete the tasks as written. [x]
 
 ### Testing & Debugging
 

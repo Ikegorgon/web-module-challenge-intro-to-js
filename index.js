@@ -19,7 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-
+votingAge = 18;
+console.log(votingAge >= 18);
 
 
 /*
@@ -33,7 +34,12 @@ Do the following:
 
    HINT: no function required
 */
-
+firstThing = 10;
+secondThing = 10;
+if (firstThing === secondThing) {
+  firstThing += 1;
+}
+console.log(firstThing);
 
 
 
@@ -48,8 +54,10 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+year = "1999";
+year = parseInt(year);
+console.log(year);
+console.log(typeof year)
 
 
 /*
@@ -64,6 +72,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
+console.log(multiply(8,10));
 
 
 
@@ -77,9 +86,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
+console.log(dogYears(10));
 
 
 
@@ -129,9 +139,31 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  feed = 0;
+  if (age < 1) {
+    months = age * 12;
+    if (months <= 4) {
+      feed = weight * .1;
+    } else if (months <= 7) {
+      feed = weight * .05;
+    } else {
+      feed = weight * .04;
+    }
+  } else {
+    if (weight <= 5) {
+      feed = weight * 0.5;
+    } else if (weight <= 10) {
+      feed = weight * 0.4;
+    } else if (weight <= 15) {
+      feed = weight * 0.3;
+    } else {
+      feed = weight * .02;
+    }
+  }
+  return feed;
 }
+console.log(hungryDog(10, 3));
 
 
 
@@ -155,10 +187,28 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-
-function game(user, computer){
-  /*add your code here*/
+computerChoice = Math.random;
+if (computerChoice <= 0.33) {
+  computerChoice = "rock";
+} else if (computerChoice <= 0.66) {
+  computerChoice = "paper";
+} else {
+  computerChoice = "scissors";
 }
+function game(user, computer){
+  outcome = "";
+  if (user === computer) {
+    outcome = "it's a tie";
+  } else {
+    if (user === "scisors" && computer === "paper" || user === "paper" && computer === "rock" || user === "rock" && computer === "scissors") {
+      outcome = "you win!";
+    } else {
+      outcome = "you lose!";
+    }
+  }
+  return outcome;
+}
+console.log(game("rock","scissors"));
 
 
 
@@ -173,9 +223,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return kilometers / 1.609;
 }
+console.log(miles(10));
 
 
 
@@ -187,9 +238,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(centimeters){
+  return centimeters / 30.48;
 }
+console.log(feet(30));
 
 
 
@@ -206,9 +258,12 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+startingNumber = 10;
+function annoyingSong(start){
+  console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around "+ (start-1) + " bottles of soda on the wall");
+}
+for (i = startingNumber; i > 0; i--) {
+  annoyingSong(i);
 }
 
 
@@ -227,9 +282,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(grade){
+  if (grade < 60) {
+    return "F";
+  } else if (grade < 70) {
+    return "D";
+  } else if (grade < 80) {
+    return "C";
+  } else if (grade < 90) {
+    return "B";
+  } else {
+    return "A";
+  }
 }
+console.log(grade(89));
 
 
 

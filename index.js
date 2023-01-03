@@ -141,7 +141,7 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 function hungryDog(weight, age){
   let feed = 0;
   if (age < 1) {
-    months = age * 12;
+    let months = age * 12;
     if (months <= 4) {
       feed = weight * .1;
     } else if (months <= 7) {

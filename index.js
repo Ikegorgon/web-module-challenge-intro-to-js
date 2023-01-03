@@ -238,7 +238,7 @@ Using the feet function below do the following:
 */
 
 function feet(centimeters){
-  return centimeters * 0.0328084;
+  return centimeters / 30.84;
 }
 console.log(feet(30));
 

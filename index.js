@@ -162,7 +162,7 @@ function hungryDog(weight, age){
   }
   return feed;
 }
-console.log(hungryDog(6,1));
+console.log(hungryDog(20,.2));
 
 
 
@@ -199,7 +199,7 @@ function game(user, computer){
   if (user === computer) {
     outcome = "it's a tie";
   } else {
-    if (user === "scisors" && computer === "paper" || user === "paper" && computer === "rock" || user === "rock" && computer === "scissors") {
+    if (user === "scissors" && computer === "paper" || user === "paper" && computer === "rock" || user === "rock" && computer === "scissors") {
       outcome = "you win!";
     } else {
       outcome = "you lose!";
@@ -207,7 +207,7 @@ function game(user, computer){
   }
   return outcome;
 }
-console.log(game("rock","scissors"));
+console.log(game("scissors","paper"));
 
 
 
@@ -223,7 +223,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return kilometers / 1.609;
+  return kilometers * 0.621371;
 }
 console.log(miles(10));
 
@@ -238,7 +238,7 @@ Using the feet function below do the following:
 */
 
 function feet(centimeters){
-  return centimeters / 30.48;
+  return centimeters * 0.0328084;
 }
 console.log(feet(30));
 
@@ -282,19 +282,21 @@ Using the grade function below do the following:
 */
 
 function grade(grade){
+  let score = "you got a";
   if (grade < 60) {
-    return "F";
+    score += "n F";
   } else if (grade < 70) {
-    return "D";
+    score += " D";
   } else if (grade < 80) {
-    return "C";
+    score += " C";
   } else if (grade < 90) {
-    return "B";
+    score += " B";
   } else {
-    return "A";
+    score += "n A";
   }
+  return score;
 }
-console.log(grade(89));
+console.log(grade(79));
 
 
 

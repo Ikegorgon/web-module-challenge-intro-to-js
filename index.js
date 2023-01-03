@@ -19,7 +19,7 @@ Do the following:
 
    HINT: no function required
 */
-votingAge = 18;
+const votingAge=18;
 console.log(votingAge >= 18);
 
 
@@ -34,8 +34,8 @@ Do the following:
 
    HINT: no function required
 */
-firstThing = 10;
-secondThing = 10;
+let firstThing = 10;
+let secondThing = 10;
 if (firstThing === secondThing) {
   firstThing += 1;
 }
@@ -54,10 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-year = "1999";
+let year = "1999";
 year = parseInt(year);
 console.log(year);
-console.log(typeof year)
 
 
 /*
@@ -72,7 +71,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
-console.log(multiply(8,10));
+console.log(multiply(5,7));
 
 
 
@@ -89,7 +88,7 @@ Do the following:
 function dogYears(age){
   return age * 7;
 }
-console.log(dogYears(10));
+console.log(dogYears(5));
 
 
 
@@ -140,7 +139,7 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 */  
 
 function hungryDog(weight, age){
-  feed = 0;
+  let feed = 0;
   if (age < 1) {
     months = age * 12;
     if (months <= 4) {
@@ -187,7 +186,7 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
-computerChoice = Math.random;
+let computerChoice = Math.random;
 if (computerChoice <= 0.33) {
   computerChoice = "rock";
 } else if (computerChoice <= 0.66) {
@@ -196,7 +195,7 @@ if (computerChoice <= 0.33) {
   computerChoice = "scissors";
 }
 function game(user, computer){
-  outcome = "";
+  let outcome = "";
   if (user === computer) {
     outcome = "it's a tie";
   } else {
@@ -258,7 +257,7 @@ Using the annoyingSong function below do the following:
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
-startingNumber = 10;
+let startingNumber = 10;
 function annoyingSong(start){
   console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around "+ (start-1) + " bottles of soda on the wall");
 }

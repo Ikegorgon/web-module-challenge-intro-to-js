@@ -259,10 +259,10 @@ Using the annoyingSong function below do the following:
 */
 let startingNumber = 10;
 function annoyingSong(start){
-  console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around "+ (start-1) + " bottles of soda on the wall");
+  return (start + " bottles of soda on the wall, " + start + " bottles of soda, take one down pass it around "+ (start-1) + " bottles of soda on the wall");
 }
 for (let i = startingNumber; i > 0; i--) {
-  annoyingSong(i);
+  console.log(annoyingSong(i));
 }
 
 

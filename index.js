@@ -151,18 +151,18 @@ function hungryDog(weight, age){
     }
   } else {
     if (weight <= 5) {
-      feed = weight * 0.5;
+      feed = weight * .05;
     } else if (weight <= 10) {
-      feed = weight * 0.4;
+      feed = weight * .04;
     } else if (weight <= 15) {
-      feed = weight * 0.3;
+      feed = weight * .03;
     } else {
       feed = weight * .02;
     }
   }
   return feed;
 }
-console.log(hungryDog(10, 3));
+console.log(hungryDog(6,1));
 
 
 

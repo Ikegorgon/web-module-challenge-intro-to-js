@@ -313,9 +313,32 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  let vowelCount = 0;
+  let testStr = str.toLowerCase();
+  while (testStr.includes("a")) {
+    testStr = testStr.replace("a", "");
+    vowelCount += 1;
+  }
+  while (testStr.includes("e")) {
+    testStr = testStr.replace("e", "");
+    vowelCount += 1;
+  }
+  while (testStr.includes("i")) {
+    testStr = testStr.replace("i", "");
+    vowelCount += 1;
+  }
+  while (testStr.includes("o")) {
+    testStr = testStr.replace("o", "");
+    vowelCount += 1;
+  }
+  while (testStr.includes("u")) {
+    testStr = testStr.replace("u", "");
+    vowelCount += 1;
+  }
+  return vowelCount;
 }
+console.log(vowelCounter("Let's see how many vowels there are up in this string."));
 
 
 
